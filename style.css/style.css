@@ -12,19 +12,20 @@
   }
 
   /* shared style  */
-
-
+ 
+  
+/* 
+.display-flex{
+    display: flex;
+} */
 
 /* header */
-.header{
+
     /* background-image: url(../images/Circle\ design.svg);
     background-repeat: no-repeat; */
   
   
-  
-   
-    
-}
+
   /* nav style start */
 .nav-title{
     font-size: 1.5rem;
@@ -74,7 +75,7 @@
   }
   .banner-description{
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 16px;
   }
   .button{
@@ -84,12 +85,169 @@
     color: white;
     background-color: #E02C6D;
     font-size: 1rem;
-    padding: 10px;
+    padding: 24px;
     border-radius: 30px;
     width: 196px;
     margin-bottom: 16px;
+    border: none;
            
   }
   .banner-camera-pic{
     max-width: 440px;
   }
+
+  /* our sponsor company style start */
+  .our-sponsor{
+    max-width: 1110px;
+    height: 110px;
+    
+    margin: 0 auto;
+  
+    margin-bottom: 100px;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.1);
+  
+  
+    
+
+  }
+  .sponsor-company{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    
+  }
+  /* popular collection style start */
+  .collection-title{
+    text-align: center;
+    margin-bottom: 30px;
+
+  }
+
+  .collection-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 50px 195px;
+   
+  }
+  .collection-card{
+   
+    width: 329px;
+    height: 476px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 50px 0px rgba(0,0,0,0.06);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 15px; 
+    
+  }
+  .collection-card:hover{
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.4);
+    cursor: pointer;
+  }
+ 
+ 
+  .card-title{
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 5px;
+  
+
+  }
+  .card-price{
+    font-size: 1.5rem;
+    font-weight: 300;
+    
+  }
+  .card-rating{
+    font-size: 0.87rem;
+    font-weight: 400;
+  
+  }
+  .card-description{
+    font-size: 0.87rem;
+    font-weight: 400;
+    color: #787885;
+    line-height: 143%;
+    letter-spacing: 1.8%;
+  }
+   .collection-container img{
+    max-width: 300px;
+    height: 256px;
+   }
+.see-more{
+font-size: 1rem;
+color: #E02C6D;
+font-weight: 700;
+margin-left: 1143px;
+
+}
+/* feature section start */
+.feature{
+    display: flex;
+    gap: 96px;
+    max-width: 1150px;
+    height: 270px;
+    margin:84px auto;
+
+    
+}
+.feature-content{
+    margin: 23px;
+    
+
+}
+.feature-title{
+    font-size: 2.35rem;
+    color: rgba(10, 8, 38, 1);
+    margin-bottom: 10px;
+}
+.feature-description{
+    font-size: 1rem;
+    color: rgba(108, 108, 108, 1);
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+.btn-2{
+    color: white;
+    background-color: #E02C6D;
+    font-size: 1rem;
+    padding: 24px;
+
+    width: 155px;
+    margin-bottom: 16px;
+           
+}
+/* footer section */
+footer{
+    background-color: #0A0826;
+    height: 200px;
+   
+  
+}
+
+
+
+.footer-section{
+    text-align: center;
+    color: white;
+    padding: 50px;
+  
+    
+ 
+}
+.footer-title{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    
+}
+.footer-description{
+    font-size: 0.85rem;
+    line-height: 24px;
+    color: #D9DBE1;
+    margin-bottom: 5px;
+}
+.all-right{
+    font-size: 0.85rem;
+    color: #D9DBE1;
+}
