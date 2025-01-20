@@ -25,10 +25,6 @@
     display: flex;
 } */
 
-.header{
-  
-
-}
 
      
   
@@ -282,10 +278,18 @@ footer{
 @media screen and (max-width:576px) {
   .nav-title{
     text-align: center;
+    font-size: 1rem;
   }
   nav{
     flex-direction:column;
+    
+  }
+  nav > ul{
+    gap: 20px;
+   
+    
 
+  
   }
 .banner{
   flex-direction: column-reverse;
@@ -293,11 +297,18 @@ footer{
   text-align: center;
   background-position: top;
   
+  min-height: 100vh;
+  background-size: auto;
+  
+
+  
 
   
 }
 .banner-title{
   font-size: 2rem;
+  margin-top: 60px;
+
 }
 .banner-description{
   padding: 15px;
@@ -336,5 +347,6 @@ footer{
 }
 .feature-content{
   text-align: center;
+  padding: 20px;
 }
 }
