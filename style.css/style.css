@@ -12,18 +12,25 @@
   }
 
   /* shared style  */
- 
+  img{
+    max-width: 100%;
+  }
+ .container{
+  max-width: 1180px;
+  margin: auto;
+ }
   
 /* 
 .display-flex{
     display: flex;
 } */
 
-/* header */
-
-    /* background-image: url(../images/Circle\ design.svg);
-    background-repeat: no-repeat; */
+.header{
   
+
+}
+
+     
   
 
   /* nav style start */
@@ -63,7 +70,12 @@
   .banner{
     display: flex;
     justify-content: space-between;
-    margin: 157px 120px;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat; 
+    background-position: right;
+   
   }
   .banner-container{
     max-width: 582px;
@@ -105,17 +117,23 @@
   
     margin-bottom: 100px;
     box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.1);
-  
-  
-    
+   
 
   }
+  .sponsor-content{
+    padding: 35px 30px;
+  }
+ 
   .sponsor-company{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     
   }
   /* popular collection style start */
+  .container{
+    max-width: 1047px;
+    margin: auto;
+  }
   .collection-title{
     text-align: center;
     margin-bottom: 30px;
@@ -125,12 +143,12 @@
   .collection-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin: 50px 195px;
+    /* margin: 50px 195px; */
    
   }
   .collection-card{
    
-    width: 329px;
+    max-width: 329px;
     height: 476px;
     background-color: #ffffff;
     box-shadow: 0px 6px 50px 0px rgba(0,0,0,0.06);
@@ -159,10 +177,16 @@
     
   }
   .card-rating{
-    font-size: 0.87rem;
+    font-size: 0.83rem;
     font-weight: 400;
   
   }
+  .rating-style{
+    color: #FB8200;
+    font-size: 0.70rem;
+    display: inline;
+  }
+  
   .card-description{
     font-size: 0.87rem;
     font-weight: 400;
@@ -170,29 +194,28 @@
     line-height: 143%;
     letter-spacing: 1.8%;
   }
-   .collection-container img{
-    max-width: 300px;
-    height: 256px;
-   }
+   
 .see-more{
 font-size: 1rem;
 color: #E02C6D;
-font-weight: 700;
-margin-left: 1143px;
+font-weight: 500;
+text-align: right;
+
 
 }
 /* feature section start */
 .feature{
     display: flex;
     gap: 96px;
-    max-width: 1150px;
-    height: 270px;
-    margin:84px auto;
+    max-width: 1110px;
+    /* height: 270px; */
+  margin: 100px auto;
 
     
 }
 .feature-content{
-    margin: 23px;
+    
+    max-width: 610px;
     
 
 }
@@ -200,6 +223,7 @@ margin-left: 1143px;
     font-size: 2.35rem;
     color: rgba(10, 8, 38, 1);
     margin-bottom: 10px;
+    margin-top: 23px;
 }
 .feature-description{
     font-size: 1rem;
@@ -223,11 +247,7 @@ footer{
     background-color: #0A0826;
     height: 200px;
    
-  
 }
-
-
-
 .footer-section{
     text-align: center;
     color: white;
@@ -250,4 +270,71 @@ footer{
 .all-right{
     font-size: 0.85rem;
     color: #D9DBE1;
+}
+
+
+
+
+
+
+/* small device responsive desing start  */
+
+@media screen and (max-width:576px) {
+  .nav-title{
+    text-align: center;
+  }
+  nav{
+    flex-direction:column;
+
+  }
+.banner{
+  flex-direction: column-reverse;
+ 
+  text-align: center;
+  background-position: top;
+  
+
+  
+}
+.banner-title{
+  font-size: 2rem;
+}
+.banner-description{
+  padding: 15px;
+}
+.banner img{
+  max-width: 100%;
+}
+.button{
+ justify-content: center;
+}
+.sponsor-company{
+  grid-template-columns: repeat(4,1fr);
+
+
+}
+.collection-container{
+  grid-template-columns: repeat(1,1fr);
+  
+  
+ 
+}
+.collection-card{
+  margin:0 auto;
+  margin-bottom: 15px;
+
+ 
+
+}
+
+.feature{
+  flex-direction: column-reverse;
+}
+.feature img{
+  max-width: 100%;
+  padding: 30px;
+}
+.feature-content{
+  text-align: center;
+}
 }
